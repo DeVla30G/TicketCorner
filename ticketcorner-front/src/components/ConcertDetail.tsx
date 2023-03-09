@@ -84,7 +84,7 @@ return (
   <Container fluid >
   <NavBar></NavBar>
   <Card style={{ width: '20rem' }} className='card-wrap-1'>
-      <CardImg style={{ width: '18rem' }} className="img-concert" src="../images/show.png"></CardImg>
+      <CardImg style={{ width: '18rem' }} className="img-concert" src={concerts.image}></CardImg>
       <Card.Body>
     <><Card.Title className='concert-title'> {concerts.tour} </Card.Title><Card.Text className='artist'> {concerts.artist} </Card.Text><h5> {concerts.date} </h5></>
     <h6> ${concerts.price} </h6>

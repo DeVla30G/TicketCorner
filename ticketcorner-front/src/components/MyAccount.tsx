@@ -111,8 +111,10 @@ export const MyAccount= () =>{
             <div className="container-one">
               <div className='profile-container'>
                 <h1 className="urProfile"> MY ACCOUNT </h1>
-                <img className="avatar" alt="avatar" src="../images/avatar/default.jpg"/>
-                <input type="file" name="updatea" className="updatea"></input>
+                <img className="avatar" alt="avatar" src="../images/avatar.png"/>
+                <label htmlFor="files" >Choose your avatar: </label>
+                <input id="files" type="file" className="updatea" ></input>
+            
                   <div className="profile">
                     <div className="firstName">
                       <label>FIRST NAME</label>

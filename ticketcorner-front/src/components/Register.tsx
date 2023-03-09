@@ -7,6 +7,7 @@ import '../style/Register.css';
 
 export const Register = () => {
 
+  const API_URL = "http://localhost:3030/auth/";
   const navigate = useNavigate();
   const [firstName, setFirstname] = React.useState<string>();
   const [lastName, setLastname] = React.useState<string>();
@@ -42,7 +43,9 @@ export const Register = () => {
         alert('Please enter your phone number');
         return;
     }
-    axios.post('http://localhost:3030/auth/signup', {firstName,lastName,email,password,confirmPassword,phoneNumber, uRole}).then(
+    axios.post(API_URL + 'signup', 
+    {firstName, lastName, email, password, confirmPassword, phoneNumber, uRole})
+    .then(
       ({data}) => {
         console.log({data})
         alert('User created successfully')

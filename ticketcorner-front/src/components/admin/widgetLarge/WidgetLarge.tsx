@@ -1,3 +1,4 @@
+import React from "react";
 import "../../../style/Adminstyle/widgetLarge.css"
 import {useState, useEffect } from 'react';
 

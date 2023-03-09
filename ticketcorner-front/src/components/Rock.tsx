@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route,Link} from "react-router-dom";
 import {Button, Card, CardImg, Col, Container, Row} from "react-bootstrap";

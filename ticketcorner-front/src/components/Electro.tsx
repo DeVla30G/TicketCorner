@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import {useRef, useState, useEffect } from 'react';
-import axiosRequest from '../api/Requests';
-import { apiUrl } from '../api/axios-ask';
 import { BrowserRouter as Router, Route,Link} from "react-router-dom";
 import {Button, Card, CardImg} from "react-bootstrap";
 import TypeData from '../types/api.types';

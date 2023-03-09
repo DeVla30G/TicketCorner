@@ -39,7 +39,7 @@ export default function Concert () {
     
    {Array.isArray(concerts) && concerts.map((concert : any)=>{ return (
       <Card style={{ width: '18rem' }} className='card-wrap' >
-        <CardImg variant="top" src="../images/show.png" ></CardImg>
+        <CardImg variant="top" src={concert.image} ></CardImg>
         <Card.Body>
       <Card.Title className='concert-title'> {concert.artist} </Card.Title>
       <Card.Text className='artist'> {concert.tour} </Card.Text>

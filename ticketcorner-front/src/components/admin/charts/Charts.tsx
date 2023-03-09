@@ -1,3 +1,4 @@
+import React from "react";
 import "../../../style/Adminstyle/chart.css"
 import { LineChart, Line, XAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Sector, Cell, } from 'recharts';
 

@@ -1,4 +1,5 @@
 export default interface TypeData {
+    [x: string]: string | undefined;
     price: any;
     id?: any | null,
     artist: string, 
@@ -13,4 +14,5 @@ export default interface TypeData {
     phoneNumber: string,
     concert_id: string,
     author: string,
+    image: string
 }

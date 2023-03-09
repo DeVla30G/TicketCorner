@@ -1,3 +1,4 @@
+import React from "react";
 import "../../../style/Adminstyle/featuredInfo.css"
 import { ArrowUpward } from "@material-ui/icons"
 

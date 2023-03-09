@@ -27,6 +27,9 @@ export class Concert {
 
   @Prop({ required: true })
   price: string;
+
+  @Prop({ required:true })
+  image: string;
 }
 
 export const ConcertSchema = SchemaFactory.createForClass(Concert);

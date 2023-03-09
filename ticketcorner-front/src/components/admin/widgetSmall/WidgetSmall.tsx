@@ -1,3 +1,4 @@
+import React from "react";
 import "../../../style/Adminstyle/widgetSmall.css"
 import { Visibility } from "@material-ui/icons"
 import {useRef, useState, useEffect } from 'react';

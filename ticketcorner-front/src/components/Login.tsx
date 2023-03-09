@@ -1,21 +1,15 @@
 import React from 'react';
 import axios from 'axios';
-import {useRef, useState, useEffect } from 'react';
-
-import { BrowserRouter as Router, Route,Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link} from "react-router-dom";
 import {Button, Col, Container, Form, Row} from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
 import '../style/Login.css';
 
-
-
 export const Login = () => {
-
 
   const navigate = useNavigate();
   const [email, setEmail] = React.useState<string>();
   const [password, setPassword] = React.useState<string>();
-
 
   const Submit = () => {
 
@@ -37,7 +31,7 @@ export const Login = () => {
         localStorage.setItem('user_id', data._id);
         localStorage.setItem('role', data.uRole);
       },
-      (err) => alert(' wrong credentials,please try again'))
+      (err) => alert('Wrong credentials, please try again!'))
       navigate("/");
 
   }
